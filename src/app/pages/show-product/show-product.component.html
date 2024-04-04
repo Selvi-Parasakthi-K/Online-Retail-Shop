@@ -1,0 +1,53 @@
+<!-- <div class="main">
+    <div class="search-bar">
+        <input type="text" [(ngModel)]="searchQuery" placeholder="Search products...">
+    </div>
+    <div>
+        <button (click)="toggleView()" class="show-product">Show Products</button>
+        <button routerLink="/add-product" class="add-product">Add Product</button>
+    </div>
+
+    <table class="product-table">
+        <thead class="table-headings">
+            <tr>
+                <th>Product ID</th>
+                <th>Is Active</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Buy Product</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr *ngFor="let product of products | filter:searchQuery; let i = index; trackBy: trackById">
+                <td>{{ i + 1 }}</td>
+                <td>{{ product.IsActive }}</td>
+                <td>{{ product.ProductName }}</td>
+                <td>{{ product.Quantity }}</td>
+                <td><button (click)="addToCart(product)">Buy</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+ -->
+
+
+
+
+
+<div class="main">
+    <div class="search-bar">
+        <input type="text" [(ngModel)]="searchQuery" placeholder="Search products...">
+    </div>
+    <div>
+        <!-- <button (click)="toggleView()" class="show-product">Show Products</button> -->
+        <button routerLink="/add-product" class="add-product">Add Product</button>
+    </div>
+
+    <div class="product-grid">
+        <div *ngFor="let product of products | filter:searchQuery" class="product-item">
+            <div class="pname">{{ product.productName }}</div>
+            <div class="pquan">Quantity: {{ product.quantity }}</div>
+            <div><button (click)="addToCart(product)" class="buy">Buy</button></div>
+        </div>
+    </div>
+</div>

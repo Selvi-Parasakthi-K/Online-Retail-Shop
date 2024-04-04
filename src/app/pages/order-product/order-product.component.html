@@ -1,0 +1,17 @@
+<div class="order-main">
+    <div *ngIf="orders.length > 0; else noItems">
+        <div *ngFor="let order of orders" class="order-container">
+            <p class="pname">{{ order.productName }}</p>
+            <p>Quantity: 
+                <input type="number" [(ngModel)]="order.Quantity" min="1">
+                <button (click)="increaseQuantity(order)" class="increase">+</button>
+                <button (click)="decreaseQuantity(order)" class="decrease">-</button>
+                <button (click)="removeFromCart(order)" class="delete">Delete</button>
+            </p> 
+        </div> 
+        <button (click)="buyNow()" class="buy-now">Order Now</button>
+    </div>
+    <ng-template #noItems>
+        <p class="no-items">No items in the cart</p>
+    </ng-template>
+</div>
