@@ -1,4 +1,4 @@
-.container{
+.container {
     margin-top: 35vh;
 }
 
@@ -6,17 +6,17 @@
     margin-top: 40vh;
     margin-bottom: auto;
     max-width: 400px;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-  
+
 .add-product-form label {
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -29,7 +29,7 @@
     border: 1px solid #ccc;
     border-radius: 15px;
 }
-  
+
 .add-product-form input[type="checkbox"] {
     margin-right: 10px;
 }
@@ -43,17 +43,17 @@
     border-radius: 5px;
     cursor: pointer;
 }
-  
+
 .add-product-form .submit-button:hover {
     background-color: #45a049;
 }
 
-.card{
+.card {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
-.btn{
+.btn {
     height: 40px;
     border: none;
     font-size: 15px;
@@ -65,10 +65,10 @@
     width: 100%;
 }
 
-.heading{
+.heading {
     margin-bottom: 7%;
 }
 
-.form-group{
+.form-group {
     margin-top: 20px;
 }

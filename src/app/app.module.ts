@@ -17,6 +17,7 @@ import { AboutUsComponent } from './layouts/about-us/about-us.component';
 import { NgToastModule } from 'ng-angular-popup';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TopSellingProductComponent } from './pages/top-selling-product/top-selling-product.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     OrderProductComponent,
     ShowProductComponent,
     FilterPipe,
-    AboutUsComponent
+    AboutUsComponent,
+    TopSellingProductComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<div class="main">
+    <div class="product-grid">
+        <div  class="product-item">
+            <div class="pname">{{ product.productName }}</div>
+            <div class="pquan">Available Quantity: {{ product.quantity }}</div>
+            <div><button class="buy" routerLink="/show-product">Try it Now</button></div>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
